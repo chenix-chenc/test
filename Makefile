@@ -1,10 +1,10 @@
 CC=gcc
 
-all: test
+all: main
 
 clean:
 	-@rm *.o
-	-@rm test
+	-@rm main
 
 %.o:%.c
 	$(CC) -o $@ -c $<
